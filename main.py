@@ -51,7 +51,7 @@ if not logger.handlers:
     logger.addHandler(streamlit_handler)
 
 # Load environment variables from .env file
-load_dotenv()
+load_dotenv(dotenv_path="./.env.local")
 logger.info('[INTERNAL] Environment variables loaded (if .env exists)')
 
 # --- Page Configuration ---
